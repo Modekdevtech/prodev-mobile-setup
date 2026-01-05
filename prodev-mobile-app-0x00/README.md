@@ -1,3 +1,5 @@
+# reset-project"
+
 # First Mobile App Setup with Expo Router
 
 ## Objective
