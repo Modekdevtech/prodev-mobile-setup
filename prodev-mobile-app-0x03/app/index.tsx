@@ -19,6 +19,11 @@ import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import googleLogo from "@/assets/images/google.png";
+import facebookLogo from "@/assets/images/facebook.png";
+import appLogo from "@/assets/images/logo.png";
+
+
 
 export default function Index() {
   return (
@@ -26,7 +31,7 @@ export default function Index() {
       <SafeAreaView style={styles.container}>
         <View style={styles.navGroup}>
           <Ionicons name="arrow-back" size={25} />
-          <Image source={require("../assets/images/logo.png")} />
+          <Image source={appLogo} />
         </View>
 
         <Text style={styles.largeText}>Sign in to your</Text>
@@ -63,14 +68,14 @@ export default function Index() {
         <View style={styles.socialMediaButtonGroup}>
           <TouchableOpacity style={styles.socialMediaButton}>
             <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
-              <Image source={require("../assets/images/google.png")} />
+              <Image source={googleLogo} />
               <Text style={styles.socialMediaButtonText}>Continue with Google</Text>
             </View>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.socialMediaButton}>
             <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
-              <Image source={require("../assets/images/facebook.png")} />
+              <Image source={facebookLogo} />
               <Text style={styles.socialMediaButtonText}>Continue with Facebook</Text>
             </View>
           </TouchableOpacity>
